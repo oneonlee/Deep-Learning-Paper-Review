@@ -1,6 +1,11 @@
 # Deep-Learning-Paper-Review
 딥 러닝 논문 리뷰
 
+**목차**
+1. [영어 논문이라고 겁먹지 말자](https://github.com/oneonlee/Deep-Learning-Paper-Review/blob/main/README.md#%EC%98%81%EC%96%B4-%EB%85%BC%EB%AC%B8%EC%9D%B4%EB%9D%BC%EA%B3%A0-%EA%B2%81%EB%A8%B9%EC%A7%80-%EB%A7%90%EC%9E%90)
+2. [논문을 효율적으로 읽는 방법 - 3단계 접근법](https://github.com/oneonlee/Deep-Learning-Paper-Review#%EB%85%BC%EB%AC%B8%EC%9D%84-%ED%9A%A8%EC%9C%A8%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%9D%BD%EB%8A%94-%EB%B0%A9%EB%B2%95---3%EB%8B%A8%EA%B3%84-%EC%A0%91%EA%B7%BC%EB%B2%95)
+
+
 ## 영어 논문이라고 겁먹지 말자
 ### 논문의 영어 구조는 명확하다.
 ```
