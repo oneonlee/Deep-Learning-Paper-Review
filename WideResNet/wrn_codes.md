@@ -122,9 +122,11 @@ class WideResNet(nn.Module):
 
 그리고 6n이 되는 이유는, conv2에서 3x3 짜리 2개, conv3에서 3x3짜리 2개, conv4에서 3x3짜리 2개로 총 6개가 기본적인 setting이므로, 이 setting보다 몇 배 더 많은 layer를 구성할 것인지를 결정하기 위해 6n가 되게 됩니다. 
 
-만약 layer의 총개수가 16이라면, 6*2 + 4가 되며, 이는 conv2 block 내에서의 layer가 4개, conv3 block 내에서의 layer가 4개, conv4 block 내에서의 layer가 4개가 됩니다. 
+만약 layer의 총 개수가 16이라면, 6*2 + 4가 되며, 이는 conv2 block 내에서의 layer가 4개, conv3 block 내에서의 layer가 4개, conv4 block 내에서의 layer가 4개가 됩니다. 
 
 즉, n이라는 것은 conv block 내에서 3x3 conv layer의 개수에 곱해지는 계수라고 생각할 수 있습니다.
+
+<br>
 
 #### 1.1.2. WRN의 전체적인 흐름
 
@@ -141,6 +143,8 @@ class WideResNet(nn.Module):
 ```
 (WideResNet에서 이쪽 부분을 확인해주시면 됩니다!)
 
+<br>
+
 먼저 self.conv1은 3x3 conv이며, 16 channel이 output이 되도록 연산이 되게 됩니다.
 
 self.block1, self.block2, self.block3는 위 Table 1에서 conv2, conv3, conv4에 대응됩니다.
@@ -150,6 +154,8 @@ self.block에 대해서는 조금 있다가 자세히 살펴보도록 할 예정
 self.block3까지 지난 결과를 BN과 ReLU를 통과시키고, average pooling을 적용해줍니다. 
 
 그리고 이를 [batch_size, 64*widen_factor]의 shape로 만들어주고, 이를 마지막 fully connected layer에 연결하여 dataset의 class 각각에 대한 probability를 정답으로 내게 됩니다.
+
+<br>
 
 #### 1.1.3. conv block
 
@@ -200,6 +206,8 @@ nb_layers = 2이므로, block이 2개 쌓이게 되겠죠?
 즉, `BasicBlock(in_planes if i == 0 else out_planes, out_planes, stride if i == 0 else 1, dropRate)`가 만들어집니다.
 
 `layers = [BasicBlock(16, 64, 1, 0.3), BasicBlock(64, 64, 1, 0.3)]`가 될 것입니다.
+
+<br>
 
 #### 1.1.4. BasickBlock
 
@@ -277,6 +285,8 @@ self.convShortcut 또한 필요가 없어지기 때문에, 이는 None이 되고
 
 여기까지 WRN의 모델에 대한 설명은 마무리가 되었습니다.
 
+<br>
+
 ## 1.2. WRN Structures
 ### 1.2.1. WRN-40-2
 
@@ -332,6 +342,9 @@ self.convShortcut 또한 필요가 없어지기 때문에, 이는 None이 되고
 | WRN-16-8             | 95.65%            | 199 epoch                             |
 | WRN-16-10            | 95.82%            | 175 epoch                             |
 | WRN-40-4             | 96.03%            | 176 epoch                             |
+
+---
+<br>
 
 ## 4. 참고
 * [PeterKim1/paper_code_review](https://github.com/PeterKim1/paper_code_review/blob/master/7.%20Wide%20Residual%20Networks(WRN)/README.md)
