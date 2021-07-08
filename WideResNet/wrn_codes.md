@@ -1,7 +1,7 @@
 # [WRN Codes](https://drive.google.com/file/d/1hG8Dp5n3lgg4HEsLk8hx3NxQud6hjHHT/view?usp=sharing)
 1. [WRN Main Architecture](#1-wrn-main-architecture)
     * [1.1 Main code](#11-main-code)
-        + [1.1.1. depth가 6n+4인 이유](#111-depth가-6n+4인-이유)
+        + [1.1.1. depth가 6n+4인 이유](#111-depth가-6n4인-이유)
         + [1.1.2. WRN의 전체적인 흐름](#112-wrn의-전체적인-흐름)
         + [1.1.3. conv block](#113-conv-block)
         + [1.1.4. BasickBlock](#114-basickblock)
