@@ -10,7 +10,7 @@
     * [1.2.2. WRN-16-8](#122-wrn-16-8)
     * [1.2.3. WRN-16-10](#123-wrn-16-10)
     * [1.2.4. WRN-40-4](#124-wrn-40-4)
-2. [Loss Graphs](#2-loss-graphs)
+2. [Graphs](#2-graphs)
     * [2.1 WRN-40-2](#21-wrn-40-2)
     * [2.2 WRN-16-8](#22-wrn-16-8)
     * [2.3 WRN-16-10](#23-wrn-16-10)
@@ -129,6 +129,7 @@ class WideResNet(nn.Module):
 <br>
 
 #### 1.1.2. WRN의 전체적인 흐름
+위의 Table 1의 structure가 코드로 구현되어 있음을 확인할 수 있습니다.
 
 ```Python
     def forward(self, x):
@@ -245,9 +246,9 @@ BasicBlock(16, 64, 1, 0.3)이라고 가정하고 생각해보겠습니다.
 
 이를 확인한 후, `self.equalInOut`이라는 변수로 boolean 값으로 저장합니다.
 
-BasicBlock(16, 64, 1, 0.3)이라면 input의 shape와 output의 shape가 다른 경우이므로, self.equalInOut은 `False`가 됩니다.
+BasicBlock(16, 64, 1, 0.3)이라면 input의 shape와 output의 shape가 다른 경우이므로, `self.equalInOut`은 `False`가 됩니다.
 
-self.convShortcut의 경우는 self.equalInOut이 `False`이면 nn.conv2d를 적용하고, `True`이면 `None`이 됩니다.
+`self.convShortcut`의 경우는` self.equalInOut`이 `False`이면 `nn.conv2d`를 적용하고, `True`이면 `None`이 됩니다.
 
 <br> 
 
@@ -307,7 +308,7 @@ self.convShortcut 또한 필요가 없어지기 때문에, 이는 None이 되고
 ---
 <br>
 
-## 2. Loss Graphs
+## 2. Graphs
 
 ### 2.1 WRN-40-2
 
