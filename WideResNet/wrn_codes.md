@@ -310,6 +310,9 @@ self.convShortcut 또한 필요가 없어지기 때문에, 이는 None이 되고
 
 ## 2. Graphs
 
+중간에 learning rate가 변했다 보니, 약간 각진 그래프가 나오게 되고,
+잘 수렴하는 모습을 확인할 수 있습니다.
+
 ### 2.1 WRN-40-2
 
 ![image](https://user-images.githubusercontent.com/57930520/116696198-8e594580-a9fc-11eb-91f9-426e7ed847c2.png)
@@ -350,3 +353,6 @@ self.convShortcut 또한 필요가 없어지기 때문에, 이는 None이 되고
 ## 4. 참고
 * [PeterKim1/paper_code_review](https://github.com/PeterKim1/paper_code_review/blob/master/7.%20Wide%20Residual%20Networks(WRN)/README.md)
 * [cumulu-s : Wide Residual Networks(WRN) - code review](https://cumulu-s.tistory.com/36?category=933558)
+
+
+

@@ -340,7 +340,10 @@ Residual Block의 구조 실험
 5. [[논문 읽기] WRN(2016) 리뷰, Wide Residual Networks](https://deep-learning-study.tistory.com/519)
 6. cumulu-s.tistory.com : [paper review](https://cumulu-s.tistory.com/35) & [code review](https://cumulu-s.tistory.com/36)
 
+---
+## [코드 실습](https://github.com/oneonlee/Deep-Learning-Paper-Review/blob/main/WideResNet/wrn_codes.md#113-conv-block)
 
-- [szagoruyko/wide-residual-networks](https://github.com/szagoruyko/wide-residual-networks) & [Wide ResNet | PyTorch](https://pytorch.org/hub/pytorch_vision_wide_resnet/)
-- [PeterKim1/paper_code_review/7. Wide Residual Networks(WRN)](https://github.com/PeterKim1/paper_code_review/tree/master/7.%20Wide%20Residual%20Networks(WRN))
-- [J911/WRN-pytorch](https://github.com/J911/WRN-pytorch)
+- 참고
+    - [szagoruyko/wide-residual-networks](https://github.com/szagoruyko/wide-residual-networks) & [Wide ResNet | PyTorch](https://pytorch.org/hub/pytorch_vision_wide_resnet/)
+    - [PeterKim1/paper_code_review/7. Wide Residual Networks(WRN)](https://github.com/PeterKim1/paper_code_review/tree/master/7.%20Wide%20Residual%20Networks(WRN))
+    - [J911/WRN-pytorch](https://github.com/J911/WRN-pytorch)
