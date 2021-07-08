@@ -350,6 +350,3 @@ self.convShortcut 또한 필요가 없어지기 때문에, 이는 None이 되고
 ## 4. 참고
 * [PeterKim1/paper_code_review](https://github.com/PeterKim1/paper_code_review/blob/master/7.%20Wide%20Residual%20Networks(WRN)/README.md)
 * [cumulu-s : Wide Residual Networks(WRN) - code review](https://cumulu-s.tistory.com/36?category=933558)
-
-
-
