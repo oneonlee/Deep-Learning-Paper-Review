@@ -117,7 +117,7 @@ $${\bf x}_{l+1} = {\bf x}_{l} + F({\bf x}_{l}, {W_l})$$
 ### Dropout
 
 - Dropout은 Coadaptive하고 overfitting을 막기 위해 많은 네트워크에 적용되어 왔다.
-- 추가적으로 Internal Covariate Shift 이슈를 막기위한 Batch Norm 과 같은 방법들도 연구가되었는데, 이 방법들은 Regularizer의 효과도 볼 수 있다. 
+- 추가적으로 Internal Covariate Shift 이슈를 막기위한 Batch Norm 과 같은 방법들도 연구가 되었는데, 이 방법들은 Regularizer의 효과도 볼 수 있다. 
 - 이 논문에서는 Residual Block의 컨볼루션 사이에 Dropout(Dorp rate 0.3)을 사용한다.
 
 ---
@@ -139,7 +139,7 @@ $${\bf x}_{l+1} = {\bf x}_{l} + F({\bf x}_{l}, {W_l})$$
     - ${M}$ 은 kernel 크기로, 예를 들어 ${3}$ 인 경우 ${3 \times 3}$ 을 나타낸다.
         - ${B(3, 3)}$ - origial <<basic>> block
         - ${B(3, 1, 3)}$ - with one extra ${1 \times 1}$ layer
-        - ${B(1, 3, 1)}$ - with the same dim. of all conv. <<stgaightened>> bottleneck
+        - ${B(1, 3, 1)}$ - with the same dim. of all conv. <<straightened>> bottleneck
         - ${B(1, 3)}$ - the newtork has alternating ${1 \times 1}$ - ${3 \times 3}$
         - ${B(3, 1)}$ - similar idea to the previous block
         - ${B(3, 1, 1)}$ - NiN style block
@@ -325,7 +325,7 @@ Residual Block의 구조 실험
 ---
 
 ## Conclusions
-- 여러 가지 ResBlock 구조애 대한 고찰
+- 여러 가지 ResBlock 구조에 대한 고찰
 - 깊이와 폭을 동시에 고려
 - Dropout과 ResBlock을 조합하는 새로운 방법
 - 우수한 결과
