@@ -9,9 +9,9 @@
 ## 목차
 | Title | Presenter | Date |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ----------|
-| [(CVPR2015)Fully Convolutional Networks for Semantic Segmentation](https://arxiv.org/abs/1411.4038) | 남주현 | 2021.05.07.|
+| [(ICLR2014)Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/abs/1409.1556) | 남주현 | 2021.05.07.|
 | [(CVPR2016)Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385) | 이종대 | 2021.05.14.|
-| [(ICLR2014)Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/abs/1409.1556) | 남주현 | 2021.05.22.|
+| [(CVPR2015)Fully Convolutional Networks for Semantic Segmentation](https://arxiv.org/abs/1411.4038) | 남주현 | 2021.05.22.|
 | [(CVPR2015)Going Deeper with Convolutions](https://arxiv.org/abs/1409.4842) | 이종대 | 2021.07.01.|
 | [(BMVC2016)Wide Residual Networks](https://arxiv.org/abs/1605.07146) | 이동건 | 2021.07.08.|
 | [(arxiv2017)Aggregated Residual Transformations for Deep Neural Networks](https://arxiv.org/abs/1611.05431) | 방인서 | 2021.07.15.|
